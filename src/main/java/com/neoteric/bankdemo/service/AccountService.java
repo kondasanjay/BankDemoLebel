@@ -11,7 +11,7 @@ public class AccountService {
 
         Account account=null;
 
-        if(customer1.age>18){
+        if(customer1.balence>5000){
 
 
              account=new Account();
@@ -19,6 +19,8 @@ public class AccountService {
 
             account.Number= UUID.randomUUID().toString();
             account.BranchName="suryapet";
+            account.balence=customer1.balence;
+
 
             account.IFSC="SBIIFSC";
 

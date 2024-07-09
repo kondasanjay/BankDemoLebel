@@ -7,7 +7,7 @@ public class BankForm {
     public String  LastName;
 
     public int  age;
-
+    public int balence;
     public String   Address;
     public long AccountNumber;
     public long ContactNumber;
@@ -21,6 +21,7 @@ public class BankForm {
                 "FirstName='" + FirstName + '\'' +
                 ", LastName='" + LastName + '\'' +
                 ", age=" + age +
+                ", balence=" + balence +
                 ", Address='" + Address + '\'' +
                 ", AccountNumber=" + AccountNumber +
                 ", ContactNumber=" + ContactNumber +

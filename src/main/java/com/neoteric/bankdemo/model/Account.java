@@ -9,12 +9,15 @@ public class Account {
 
     public String BranchName;
 
+    public int balence;
+
     @Override
     public String toString() {
         return "Account{" +
                 "Number='" + Number + '\'' +
                 ", IFSC='" + IFSC + '\'' +
                 ", BranchName='" + BranchName + '\'' +
+                ", balence=" + balence +
                 '}';
     }
 }

@@ -22,6 +22,8 @@ class AccountServiceTest {
         customer1.ContactNumber = 99922228882l;
         customer1.Date = 22-02-2022;
 
+        customer1.balence=5001;
+
 
         Addresss addresss = new Addresss();
 
@@ -38,8 +40,10 @@ class AccountServiceTest {
 
         System.out.println(customer1);
         System.out.println(account);
+        System.out.println(account.balence);
 
-        Assertions.assertEquals(21, customer1.age);
+
+        Assertions.assertEquals(5001, customer1.balence);
         Assertions.assertNotNull(account);
 
     }
@@ -48,32 +52,34 @@ class AccountServiceTest {
     public void getAccountAgelessThaneighteen() {
 
 
-        BankForm customer11 = new BankForm();
+        BankForm customer1 = new BankForm();
 
-        customer11.FirstName = "sanjay";
-        customer11.LastName = "konda";
-        customer11.age = 16;
-        customer11.ContactNumber = 99922228882l;
-        customer11.Date = 22-02-2022;
+        customer1.FirstName = "naveen";
+        customer1.LastName = "eeerr";
+        customer1.age = 16;
+        customer1.ContactNumber = 99922228882l;
+        customer1.Date = 22-02-2022;
+        customer1.balence=4000;
 
 
-        Addresss addresss1 = new Addresss();
+        Addresss addresss = new Addresss();
 
-        addresss1.StreetName = "manasa nagar";
-        addresss1.Area = "busstand backside";
-        addresss1.City = "suryapet";
-        addresss1.District = "suryapet";
-        addresss1.PinCode = 232222;
+        addresss.StreetName = "manasa nagar";
+        addresss.Area = "busstand backside";
+        addresss.City = "suryapet";
+        addresss.District = "suryapet";
+        addresss.PinCode = 232222;
 
         AccountService accountService1 = new AccountService();
 
 
-        Account account = accountService1.getAccount(customer11);
+        Account account = accountService1.getAccount(customer1);
 
-        System.out.println(customer11);
+        System.out.println(customer1);
         System.out.println(account);
+       System.out.println(account.balence);
 
-        Assertions.assertEquals(16, customer11.age);
+        Assertions.assertEquals(4000, customer1.balence);
         Assertions.assertNull(account);
 
     }
